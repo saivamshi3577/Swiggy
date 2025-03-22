@@ -32,7 +32,7 @@ const BodySection = () => {
         {status === "succeeded" && foodItems.length > 0 && (
           <>
             <h2 className="text-2xl font-bold mb-4">Virat, what's on your mind?</h2>
-            <Swiper spaceBetween={20} slidesPerView={3} className="pb-6 w-full">
+            <Swiper spaceBetween={20} slidesPerView={5} className="pb-6 w-full">
               {foodItems.map(({ id, imageUrl }) => (
                 <SwiperSlide key={id} className="flex justify-center">
                   <Link to={`/category/${id}`}>
