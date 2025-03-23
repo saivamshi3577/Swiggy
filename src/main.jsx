@@ -7,13 +7,16 @@ import AppLayout from "./App";
 import BodySection from "./components/BodySection";
 import CategoryPage from "./components/CategoryPage";
 import './index.css'
+import MenuPage from "./components/MenuPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
     children: [{ path: "/", element: <BodySection /> },
-      { path: "/category/:categoryId", element: <CategoryPage /> },
+      // { path: "/category/:categoryId", element: <CategoryPage /> },
+      { path: "/category/:collectionId/:text", element:<CategoryPage />},
+      { path: "/category/:collectionId/:text/:id", element:<MenuPage />},
     ],
   },
 ]);

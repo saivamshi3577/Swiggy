@@ -24,7 +24,7 @@ const OnlineRestaurants = () => {
   if (filteredRestaurants.length === 0) return null;
 
   return (
-    <section className="bg-white p-6">
+    <section className="bg-white pl-30 pr-30">
       <h2 className="text-2xl font-bold mb-4">Restaurants with online food delivery in Hyderabad</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredRestaurants.map(({ id, name, imageUrl, rating, deliveryTime, cuisines, area }) => (
