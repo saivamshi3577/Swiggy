@@ -8,15 +8,17 @@ import BodySection from "./components/BodySection";
 import CategoryPage from "./components/CategoryPage";
 import './index.css'
 import MenuPage from "./components/MenuPage";
+import Cart from "./components/Cart";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
     children: [{ path: "/", element: <BodySection /> },
-      // { path: "/category/:categoryId", element: <CategoryPage /> },
       { path: "/category/:collectionId/:text", element:<CategoryPage />},
       { path: "/category/:collectionId/:text/:id", element:<MenuPage />},
+      
+      { path: "/cart", element:<Cart/>},
     ],
   },
 ]);
