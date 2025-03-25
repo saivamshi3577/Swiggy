@@ -9,6 +9,8 @@ import CategoryPage from "./components/CategoryPage";
 import './index.css'
 import MenuPage from "./components/MenuPage";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
+import ThankYou from "./components/ThankYou";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
       { path: "/category/:collectionId/:text/:id", element:<MenuPage />},
       
       { path: "/cart", element:<Cart/>},
+      { path: "/checkout", element:<Checkout/>},
+      { path: "/thank-you", element:<ThankYou/>},
     ],
   },
 ]);
